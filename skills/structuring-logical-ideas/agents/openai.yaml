@@ -1,0 +1,13 @@
+interface:
+  display_name: 邏輯構想與思維導圖
+  short_description: 將主題轉為嚴謹推論、巢狀思維導圖與可交付的 PDF 報告
+  default_prompt: 使用 $structuring-logical-ideas 分析這個主題，建立巢狀思維導圖並產生 PDF。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

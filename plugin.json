@@ -1,0 +1,62 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "structuring-logical-ideas",
+  "version": "1.0.0",
+  "description": "Structures topics, problems, and project ideas into rigorously nested SCQA, PREP, Pyramid MECE, and STAR analyses with Markdown mind maps and searchable PDF reports.",
+  "author": {
+    "name": "azusakawa",
+    "url": "https://github.com/azusakawa"
+  },
+  "homepage": "https://github.com/azusakawa/logical-idea-mind-map",
+  "repository": "https://github.com/azusakawa/logical-idea-mind-map",
+  "license": "MIT",
+  "keywords": [
+    "logical thinking",
+    "mind map",
+    "SCQA",
+    "PREP",
+    "pyramid principle",
+    "MECE",
+    "STAR",
+    "decision making",
+    "PDF report"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Logical Ideas & Mind Maps",
+        "shortDescription": "Structure ideas into reports",
+        "longDescription": "Turn a topic, problem situation, or project idea into a traceable decision argument. The plugin identifies context, stakeholders, timing, constraints, decision owner, thesis, definitions, assumptions, causal paths, recurring tensions, audience-specific explanations, actions, and validation metrics. It produces a 300-character summary, a Markdown mind map, and a searchable PDF. Its required nesting is SCQA > Answer > PREP, with a MECE Pyramid inside Reason and STAR inside Example or supporting facts.",
+        "developerName": "azusakawa",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "Turn this topic into a rigorous argument, nested mind map, and PDF report.",
+          "Analyze this problem with SCQA, then nest PREP, Pyramid MECE, and STAR.",
+          "Stress-test this project idea and turn the reasoning into actions and metrics."
+        ],
+        "websiteURL": "https://github.com/azusakawa/logical-idea-mind-map",
+        "supportURL": "https://github.com/azusakawa/logical-idea-mind-map/issues",
+        "privacyPolicyURL": "https://github.com/azusakawa/logical-idea-mind-map/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/azusakawa/logical-idea-mind-map/blob/main/TERMS.md",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/composer-icon.png"
+      },
+      "review": {
+        "commerce": false
+      },
+      "publication": {
+        "release_notes": "Initial public release. Converts topics, problem situations, and project ideas into structured analyses using strictly nested SCQA, PREP, Pyramid MECE, and STAR models, then produces a Markdown mind map and searchable PDF report.",
+        "countries": [],
+        "translations": {
+          "zh-TW": {
+            "subtitle": "將構想轉為邏輯報告",
+            "description": "將特定主題、問題情境或專案構想整理為可追溯的決策論證。輸出背景與限制、300 字摘要、關鍵字與變數、決策主體、核心論點、概念邊界、因果路徑、潛在衝突、分眾說明、行動與驗證指標；並以 SCQA 為外層，在 Answer 內嵌 PREP、在 Reason 內嵌符合 MECE 的金字塔、在 Example 或底層事實內嵌 STAR，最後產生 Markdown 思維導圖與可搜尋 PDF。"
+          }
+        }
+      }
+    }
+  }
+}
